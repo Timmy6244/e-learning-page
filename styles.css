@@ -269,6 +269,56 @@
   }
   
   /***23. curses section***/
+  .courses-item {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .courses-item .img-box img {
+  width: 100%;
+  border-radius: 5px;
+  }
+  .courses-item .link {
+    color: var(--black-70);
+    display: inline-block;
+  }
+  .courses-item .title {
+    text-transform: uppercase;
+    margin: 15px 0;
+    transition: color 0.25s ease;
+  }
+  .courses-item .title:hover {
+    color: var(--main-clr);
+  }
+  .courses-item .instructor {
+    text-transform: capitalize;
+    margin: 0 0 12px;
+  }
+  .courses-item .instructor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .courses-item .rating {
+    font-size: 1rem;
+  }
+  .courses-item .average-stars i {
+    color: var(--orange);
+  }
+  .courses-item .average-rating {
+    font-weight: 700;
+    color: var(--orange);
+  }
+  .courses-item .price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--main-clr);
+    color: var(--WHITE);
+    font-weight: 700;
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
   /***24. testimonials section***/
   /***25. bai section***/
   /***26. course details section***/
