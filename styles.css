@@ -1,0 +1,275 @@
+/******TABLE OF CONTENTS*******/
+  
+  /**1. google font**/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+  /**2. variables***/
+  :root{
+  --orange: hsl(36,80%,50%);
+  --white: hsl(0, 0%, 100%);
+  --WHITE: hsl(0, 0%, 100%);
+  --BLACK: hsl(0, 0%; 0%);
+  --black-90: hsl(0,0% 10%);
+  --black-70: hsl(0, 0%, 30%);
+  --black-alpha-40: hsla(0,0%, 0%, 0.4);
+  --yellow-light: hsl(44, 95%, 83%);
+  --green-light: hsl(158, 68%, 75%);
+  --red-light: hsl(0, 84%, 80%);
+  --orange-light: hsl(22, 85%, 80%);
+  --select-box-bg-clr: hsl(0, 0%, 100%);
+  --border-color-1: hsl(0, 0%, 90%);
+}
+
+  
+  /**3. overrides variables for -theme dark**/ 
+  /**4. base****/
+    body {
+      background: var(--body-bg-clr);
+      font-family: 'Lexend', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--black-70);
+      min-height: 100vh;
+      overflow-x: hidden;
+      
+    }  
+    ul li a{
+      color: var(--main-clr);
+      text-decoration: none;
+    }
+    ul li a:hover {
+      color: var(--main-clr);
+    }
+    img {
+      max-width:100%;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      color: var(--black-90);
+      line-height: 1.4;
+    }
+    ::selection {
+      color: var(--WHITE);
+      background: var(--main-clr);
+    }
+/****  5. box***/
+  .box {
+    background: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 30px;
+  }
+  /***6. customized bootstrap classes***/
+  .container {
+    --bs-gutter-x: 15px;
+    max-width: 1000px;
+  }
+  .row {
+    --bs-gutter-x: 30px;
+  }
+  /***7. animation keyframes***/
+  /***8. section  padding, title***/
+  .section-padding {
+    padding: 3.4rem 0;
+  }
+  .section-title {
+    margin-bottom: 2.65rem;
+  }
+  .section-title .title {
+    font-size: 1.5rem;
+    color: var(--main-clr);
+    text-transform: capitalize;
+  }
+  .section-title .sub-title {
+    font-size: 2.4rem;
+    font-weight: 750;
+    color: var(--black-90);
+    /* text-transform: capitalize; */
+  }
+  /***9. buttons***/
+  .btn-theme {
+    background: var(--main-clr);
+    color: var(--WHITE);
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.25s ease;
+  }
+  .btn-theme:hover {
+    color: var(--white);
+    background: var(--button-hover-clr);
+  }
+  .btn-theme:focus {
+    box-shadow: 0 0 10px var(--main-clr);
+  }
+  /***10. page loader***/
+  /***11. circular image***/
+  .circular-img {
+    max-width: 360px;
+    margin: auto;
+    /* border-radius: 50%; */
+    position: relative;
+    z-index: 1;
+    
+  }
+  .circular-img-inner {
+    text-align: center;
+    border-radius: 0 0 180px 180px;
+    overflow: hidden;
+  }
+  .circular-img-circle {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  .circular-img img {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+  /***12. forms
+  /***13. video model ***/
+  /***14. pagination***/
+  /***15. breadcrumb***/
+  /***16. tabs***/
+  /***17. bubble animation***/
+  /***18. style switcher***/
+  /***19. header***/
+  .header {
+    border-bottom: 1px solid var(--border-clr-2);
+  }
+  .header-logo a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 720;
+    color: var(--black-70);
+    text-decoration: none;
+  }
+  .header-logo span{
+    color: var(--main-clr);
+  }
+  .header .menu-item {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+  }
+  .header .menu-item > a{
+    text-transform: capitalize;
+    display: block;
+    font-weight: 450;
+    color: var(--black-90);
+    transition: color 0.25s ease;
+  }
+  
+  .header .menu-item > a i{
+    font-size: 0.852rem;
+    margin-left: 3px;
+    pointer-events: none;
+    
+  }
+  .header .menu-item:hover > a {
+    opacity: 2;
+    color: var(--main-clr);
+  }
+  .header .sub-menu-item:hover a{
+    color: var(--main-clr);
+  }
+  .header .sub-menu {
+    position: absolute;
+    background: var(--white);
+    left: 0;
+    top:  100%;
+    padding: 10px 0;
+    border-radius: 0.5rem;
+    width: 200px;
+    box-shadow: var(--shadow);
+    transition: all 0.25s ease;
+    z-index: 2;
+    visibility: hidden;
+    filter: opacity(0);
+    transform: translateY(10px);
+  }
+  @media (min-width: 980px) {
+    .header .menu-item:hover >.sub-menu {
+      visibility: visible;
+      transform: translateY(0);
+      filter: opacity(4);
+    }
+  }
+  .header .sub-menu-item a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--black-90);
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: color 0.25s ease;
+  }
+  .heade r-backdrop,
+  .header-close-btn,
+  .header-hamburger-btn{
+    display: none;
+  }
+  /***20. footer***/
+  /***21. banner section***/
+  
+  .banner-section {
+    min-height: 60px;
+    padding: 80px 0;
+  }
+  .banner-img {
+    height: 400px;
+  }
+  .banner-section .circular-img-circle {
+    background: var(--red-light);
+  }
+  .banner-text h2 {
+    font-size: 2.25rem;
+    color: var(--main-clr);
+  }
+  .banner-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    
+  }
+  /***22. fun facts section***/
+  .fun-facts-item {
+    padding: 0.95rem 0;
+  }
+  .fun-facts-item h3{
+    font-weight: 500;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+  }
+  .fun-facts-item p{
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .fun-facts-item .style-1{
+    color: var(--black-70);
+  }
+  .fun-facts-item .style-2{
+    color: var(--green-light);
+    
+  }
+  .fun-facts-item .style-3{
+    color: var(--red-light);
+    
+  }
+  .fun-facts-item .style-4{
+    color: var(--orange-light);
+    
+  }
+  
+  /***23. curses section***/
+  /***24. testimonials section***/
+  /***25. bai section***/
+  /***26. course details section***/
+  /***27. contact section***/

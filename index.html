@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Simple Admin Dashboard</title>
+    <!---FONTAWSOME ICONS-->
+     <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
+  <!-----GOOGLE FONT------>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.gopis.com/css2?family=Lexend:wght@100..900&display=swap"
+  rel="stylesheet"
+  />
+    <!--BOOTSTRAP STYLE-->
+    <link rel="stylesheet" href="res/bootstrap@5.2.0.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="colors-styling.css" type="text/css" media="all" />
+</head>
+<body>
+    
+    <div class="wrapper">
+  <header class="header">
+    <div class="container">
+        <div
+            class="main-header d-flex justify-content-between align-items-center"
+        >
+            <!--logo-header start here-->
+            <div class="header-logo">
+                <a href="app.html"><span>e-</span>Learning</a>
+            </div>
+            <!--logo-header end here-->
+            <button
+                class="header-hamburger-btn js-header-menu-toggler bg-warning"
+                type="button"
+            >
+                <span></span>
+            </button>
+            <!--hamburger ends here-->
+            <div class="header-backdrop js-header-backdrop"></div>
+            <!--navigation menu -->
+            <nav class="header-menu js-header-menu">
+                <!--close button --->
+                <button
+                    type="button"
+                    class="header-close-btn js-header-menu-toggler"
+                >
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="app.html">home</a>
+                    </li>
+                    <!--courses-->
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" class="js-toggle-sub-menu"
+                            >courses
+                            <i class="fas fa-chevron-down"></i
+                        ></a>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu-item">
+                                <a href="course.html">course</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="course-details.html"
+                                    >course details</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" class="js-toggle-sub-menu"
+                            >pages
+                            <i class="fas fa-chevron-down"></i
+                        ></a>
+                        <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu-item">
+                                <a href="log-in.html">log in </a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="sign-up.html">sign up</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--nav menu ends here -->
+        </div>
+    </div>
+  </header>
+  <!--header end here!--->
+  
+  <!--banner section begins here!--->
+  <section class="banner-section d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <!--banner text-->
+                <div class="banner-text">
+                    <h2 class="mb-3">Pen is mighter than sword</h2>
+                    <h1 class="mb-3 text-capitalize">
+                        best online platform for learning
+                    </h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip
+                        git@github.com:Timmy6244/e-learning-project.git
+                        ex ea commodo consequat. Duis aute irure
+                        dolor
+                    </p>
+                    <a class="btn-theme btn" href="#">join free</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner-img">
+                    <div class="circular-img">
+                        <div class="circular-img-inner">
+                            <div class="circular-img-circle"></div>
+                            <img
+                                class="banner-img"
+                                src="images/banner-7.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--banner section end here!--->
+  
+  <!--fun facts section begins here-->
+  <section class="fun-facts-section">
+    <div class="container">
+        <div class="box py-3">
+            <div class="row text-center">
+                <!--first row-->
+                <div class="col-md-3 col-lg-3">
+                    <div class="fun-facts-item">
+                        <h2 class="style-1">200K</h2>
+                        <p>student we have</p>
+                    </div>
+                </div>
+                <!--second row-->
+                <div class="col-md-3 col-lg-3">
+                    <div class="fun-facts-item">
+                        <h2 class="style-2">200+</h2>
+                        <p>courses</p>
+                    </div>
+                </div>
+                <!--third row-->
+                <div class="col-md-3 col-lg-3">
+                    <div class="fun-facts-item">
+                        <h2 class="style-3">25+</h2>
+                        <p>countries</p>
+                    </div>
+                </div>
+                <!--fourth row-->
+                <div class="col-md-3 col-lg-3">
+                    <div class="fun-facts-item">
+                        <h2 class="style-4">40+</h2>
+                        <p>skilled instructors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--fun facts section ends here-->
+  
+  <!--courses section begins here-->
+  <section class="courses-section section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-title">
+                    <h2 class="title text-center">courses</h2>
+                    <p class="sub-title text-center">
+                        Find the right course for you
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--courses item begings -->
+            <div class="col-md-3 col-lg-3">
+                <div class="courses-item">
+                    <a href="course-details.html" class="link">
+                        <div class="courses-item-inner">
+                            <div class="img-box">
+                                <img
+                                    src="images/img-2.jpg"
+                                    alt="course image"
+                                />
+                            </div>
+                            <div class="instructor"></div>
+                            <div class="rating"></div>
+                            <div class="price"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--courses item ends -->
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3 bg-">
+                <a href="courses.html" class="btn-theme btn"
+                    >view all courses</a
+                >
+            </a>
+        </a>
+    </a>
+  </section>
+    <!--courses section ends here-->
+  </a>
+  <script src="app.js"></script>
+</body>
+</html>
