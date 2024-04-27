@@ -128,10 +128,10 @@
   }
   .circular-img-circle {
     position: absolute;
-    bottom: 0;
-    left: 20px;
-    height: 300px;
-    width: 300px;
+    bottom: -1px;
+    left: 30px;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
   }
   .circular-img img {
@@ -223,6 +223,7 @@
     display: none;
   }
   /***20. footer***/
+  
   /***21. banner section***/
   
   .banner-section {
@@ -359,11 +360,10 @@
     position: relative;
     height: 35px;
     width: 35px;
-    display: inline-block;
     background-color: var(--main-clr);
+    display: inline-block;
     border-radius: 50%;
     margin: 0 4px;
-    
   }
   .testimonials-item h3 {
     text-transform: capitalize;
@@ -373,5 +373,8 @@
     text-transform: capitalize;
   }
   /***25. bai section***/
+  .bai-section  .circular-img-circle {
+    background-color: var(--yellow-light);
+  }
   /***26. course details section***/
   /***27. contact section***/
