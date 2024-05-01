@@ -143,8 +143,51 @@
   /***12. forms
   /***13. video model ***/
   /***14. pagination***/
+  .page-item.disabled .page-link,
+  .page-link {
+    border: none;
+    background-color: transparent;
+    color: var(--black-70);
+  }
+  .page-item.active .page-link {
+    background-color: var(--main-clr);
+  }
+  .page-link:hover {
+   background-color: var(--main-clr);
+   color: var(--WHITE);
+  }
   /***15. breadcrumb***/
+  .breadcrumb-nav {
+    padding: 10px 0;
+  }
+  .breadcrumb-nav .breadcrumb-item {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before,
+  .breadcrumb-nav .breadcrumb-item.active{
+    color: var(--black-70);
+  }
   /***16. tabs***/
+  .nav-tabs .nav-link {
+    background-color: var(--white);
+    text-transform: capitalize;
+    border-color: var(--border-clr-2);
+    padding: 5px 12px;
+    margin:  0 5px 10px;
+    border-radius: 6px;
+    color: var(--black-70);
+    font-size: 1.2rem;
+  }
+  .nav-tabs .nav-link.active {
+    background-color: var(--main-clr);
+    border-color: transparent;
+    color: var(--WHITE);
+  }
+  .nav-tabs .nav-link:hover {
+    border-color: var(--border-clr-2);
+  }
+  
   /***17. bubble animation***/
   /***18. style switcher***/
   /***19. header***/
@@ -223,7 +266,59 @@
     display: none;
   }
   /***20. footer***/
+  .footer-top {
+    padding: 50px 0 20px;
+  border-top: 1px dotted var(--border-clr-2);
   
+  }
+  .footer-item {
+    margin: 0 0 30px;
+  }
+  .footer-item h3 {
+    text-transform: capitalize;
+    margin: 0 0 20px;
+  }
+  .footer-item .footer-logo {
+    color: var(--black-70);
+    text-transform: uppercase;
+  }
+  .footer-item .footer-logo span {
+    color: var(--main-clr);
+  }
+  .footer-item ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .footer-item ul a{
+    text-transform: capitalize;
+    color: var(--black-70);
+    transition: color 0.25s ease;
+    position: relative;
+  }
+  .footer-item ul a:hover {
+    color: var(--main-clr);
+  }
+  .footer-item ul a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-clr);
+    transition: width 0.25s ease;
+  }
+  .footer-item ul a:hover::before {
+    width: 100%;
+  }
+  .footer-item ul a .social-icon {
+    margin-right: 6px;
+  }
+  .footer-bottom {
+    border-top: 1px dotted var(--border-clr-2)
+  }
+  .footer-bottom p {
+    font-size: 1rem;
+  }
   /***21. banner section***/
   
   .banner-section {
@@ -289,7 +384,7 @@
     text-decoration: none;
   }
   .courses-item .title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 15px 0;
     transition: color 0.25s ease;
   }
